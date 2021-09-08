@@ -5,6 +5,7 @@ html, body {
     --light-purple: #A499B3;
     --pink: #D0BCD5;
     --blue: #226CE0;
+    background-color: var(--dark-purple);
     margin: 0;
     padding: 0;
 }

@@ -1,3 +1,40 @@
 .result {
     grid-area: 2 / 2 / 3 / 3;
+    margin: 20px;
+    display: grid;
+    place-items: center;
+}
+.result-wrapper {
+    background-color: var(--blue);
+    padding: 20px;
+    border-radius: 10px;
+}
+.result-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.result-page > h1 {
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    margin: 10px;
+    letter-spacing: 20px;
+    text-align: center;
+    text-indent: 20px;
+}
+.result-page > p {
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+.gst-payable {
+    background-color: var(--dark-purple);
+    color: var(--pink);
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
 }

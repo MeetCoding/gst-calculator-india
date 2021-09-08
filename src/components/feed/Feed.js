@@ -18,6 +18,7 @@ export default class Feed extends Component {
         }
         this.handleChange = this.handleChange.bind(this)
         this.handleCheckboxChange = this.handleCheckboxChange.bind(this)
+        this.go = this.go.bind(this)
     }
 
     handleChange(e) {
@@ -28,7 +29,6 @@ export default class Feed extends Component {
         }
         val = val.replaceAll('%','')
         val = val.replaceAll('₹','')
-        console.log(val)
         if(isNaN(val)) {
             return
         }
@@ -52,6 +52,10 @@ export default class Feed extends Component {
                 checkboxImage: newCheckboxImage
             }
         })
+    }
+
+    go() {
+        this.props.setFeedData(this.state)
     }
 
     render() {
@@ -108,33 +112,39 @@ export default class Feed extends Component {
                             value={this.state.numberOfGoodsSold}
                         />
                     </label>
+                    <div className='button-wrapper'>
+                        <label 
+                            className= {
+                                this.state.isIntraState?
+                                    'checkbox-label checked':
+                                    'checkbox-label unchecked'
+                            }
+                        >
+                            <img 
+                                className='checkbox-image'
+                                src={this.state.checkboxImage} 
+                                alt='' 
+                            />
+                            <input
+                                className = 'checkbox'
+                                name='isIntraState'
+                                type='checkbox'
+                                checked={this.state.isIntraState}
+                                onChange={this.handleCheckboxChange}
+                            />
+                            {this.state.isIntraState?'IntraState':'InterState'}
+                            <img 
+                                className='checkbox-image'
+                                src={this.state.checkboxImage} 
+                                alt='' 
+                            />
+                        </label>
+                        <button 
+                            className='go'
+                            onClick={this.go}
+                        >Go</button>
+                    </div>
                 </div>
-                <label 
-                    className= {
-                        this.state.isIntraState?
-                            'checkbox-label checked':
-                            'checkbox-label unchecked'
-                    }
-                >
-                    <img 
-                        className='checkbox-image'
-                        src={this.state.checkboxImage} 
-                        alt='' 
-                    />
-                    <input
-                        className = 'checkbox'
-                        name='isIntraState'
-                        type='checkbox'
-                        checked={this.state.isIntraState}
-                        onChange={this.handleCheckboxChange}
-                    />
-                    {this.state.isIntraState?'IntraState':'InterState'}
-                    <img 
-                        className='checkbox-image'
-                        src={this.state.checkboxImage} 
-                        alt='' 
-                    />
-                </label>
             </div>
         )
     }

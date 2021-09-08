@@ -4,11 +4,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 20px;
 }
 .feed-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: stretch;
+}
+.button-wrapper {
+    display: flex;
+    justify-content: space-between;
     align-items: stretch;
 }
 .feed-label {
@@ -20,7 +26,7 @@
     font-size: 20px;
 }
 .feed-input {
-    margin-inline: 15px;
+    margin-left: 10px;
     padding-block: 5px;
     padding-inline: 10px;
     width: 80px;
@@ -37,7 +43,7 @@
     outline: 2px solid var(--pink);
 }
 .checkbox-label {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     font-family: 'Poppins', sans-serif;
@@ -48,7 +54,6 @@
     padding-inline: 20px;
     padding-block: 5px;
     border-radius: 5px;
-    margin-top: 20px;
 }
 .checked {
     background-color: var(--light-purple);
@@ -61,4 +66,30 @@
 }
 .checkbox {
     display: none;
+}
+.go {
+    display: inline;
+    background-color: var(--blue);
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.go:hover {
+    color: var(--pink);
+    border: 2px solid var(--pink);
+}
+@media (max-width: 400px) {
+    .button-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .checkbox {
+        margin-top: 20px;
+    }
+    .go {
+        margin-top: 20px;
+    }
 }
