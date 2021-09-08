@@ -6,6 +6,8 @@ html, body {
     --pink: #D0BCD5;
     --blue: #226CE0;
     background-color: var(--dark-purple);
+    width: 100vw;
+    height: 100vh;
     margin: 0;
     padding: 0;
 }
