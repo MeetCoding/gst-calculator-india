@@ -7,7 +7,7 @@ import './Result.css'
 export default class Result extends Component {
     render() {
         let page = null;
-        if(this.props.data == undefined) {
+        if(this.props.data === undefined) {
             page = <NoResult />
         }
         else {
