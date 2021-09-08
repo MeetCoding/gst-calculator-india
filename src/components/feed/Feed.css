@@ -1,0 +1,64 @@
+.feed {
+    grid-area: 2 / 1 / 3 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.feed-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+.feed-label {
+    display: flex;
+    justify-content: space-between;
+    margin-block: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: var(--light-purple);
+    font-size: 20px;
+}
+.feed-input {
+    margin-inline: 15px;
+    padding-block: 5px;
+    padding-inline: 10px;
+    width: 80px;
+    background-color: var(--purple);
+    color: var(--pink);
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.feed-input:focus {
+    outline: 2px solid var(--pink);
+}
+.checkbox-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--dark-purple);
+    user-select: none;
+    padding-inline: 20px;
+    padding-block: 5px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.checked {
+    background-color: var(--light-purple);
+}
+.unchecked {
+    background-color: var(--pink);
+}
+.checkbox-image {
+    margin-inline: 10px;
+}
+.checkbox {
+    display: none;
+}
