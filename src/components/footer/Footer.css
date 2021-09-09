@@ -1,17 +1,21 @@
-.header {
-    grid-area: 1 / 1 / 2 / 3;
+.footer {
+    grid-area: 3 / 1 / 4 / 3;
     display: grid;
     place-items: center;
 }
-.heading {
+.footing {
     font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    font-size: 30px;
+    font-size: 20px;
     color: var(--pink);
-    transform: translateY(20px);
+}
+.footing > strong > a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: var(--pink);
+    text-decoration: none;
 }
 @media (max-width: 800px) {
-    .header {
+    .footer {
         height: 100px;
     }
 }
