@@ -55,6 +55,9 @@
     padding-block: 5px;
     border-radius: 5px;
 }
+.checkbox-label:hover {
+    background-color: var(--purple);
+}
 .checked {
     background-color: var(--light-purple);
 }
