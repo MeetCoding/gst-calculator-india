@@ -67,7 +67,7 @@ export default class Feed extends Component {
                         <input 
                             className='feed-input'
                             name='goodsPurchasePricePerUnit'
-                            type='text'
+                            type='tel'
                             onChange={this.handleChange}
                             value={this.state.goodsPurchasePricePerUnit}
                         />
@@ -77,7 +77,7 @@ export default class Feed extends Component {
                         <input 
                             className='feed-input'
                             name='numberOfGoodsPurchased'
-                            type='text'
+                            type='tel'
                             onChange={this.handleChange}
                             value={this.state.numberOfGoodsPurchased}
                         />
@@ -87,7 +87,7 @@ export default class Feed extends Component {
                         <input 
                             className='feed-input'
                             name='rateOfGST'
-                            type='text'
+                            type='tel'
                             onChange={this.handleChange}
                             value={this.state.rateOfGST + '%'}
                         />
@@ -97,7 +97,7 @@ export default class Feed extends Component {
                         <input 
                             className='feed-input'
                             name='profitPerUnit'
-                            type='text'
+                            type='tel'
                             onChange={this.handleChange}
                             value={'₹'+this.state.profitPerUnit}
                         />
@@ -107,7 +107,7 @@ export default class Feed extends Component {
                         <input 
                             className='feed-input'
                             name='numberOfGoodsSold'
-                            type='text'
+                            type='tel'
                             onChange={this.handleChange}
                             value={this.state.numberOfGoodsSold}
                         />
