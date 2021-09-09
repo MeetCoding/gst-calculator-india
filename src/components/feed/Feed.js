@@ -8,7 +8,7 @@ export default class Feed extends Component {
     constructor() {
         super()
         this.state = {
-            goodsPurchasePricePerUnit: 0,
+            priceOfPurhcasedGoodsPerUnit: 0,
             numberOfGoodsPurchased: 0,
             rateOfGST: 18,
             profitPerUnit: 0,
@@ -63,13 +63,13 @@ export default class Feed extends Component {
             <div className='feed'>
                 <div className='feed-wrapper'>
                     <label className='feed-label'>
-                        Goods Pruchased Price Per Unit:
+                        Price of Purchased Goods Per Unit:
                         <input 
                             className='feed-input'
-                            name='goodsPurchasePricePerUnit'
+                            name='priceOfPurhcasedGoodsPerUnit'
                             type='tel'
                             onChange={this.handleChange}
-                            value={this.state.goodsPurchasePricePerUnit}
+                            value={this.state.priceOfPurhcasedGoodsPerUnit}
                         />
                     </label>
                     <label className='feed-label'>

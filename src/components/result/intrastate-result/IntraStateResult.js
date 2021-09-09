@@ -3,15 +3,15 @@ import React from 'react'
 function IntraStateResult(props) {
 
     const {
-        goodsPurchasePricePerUnit,
+        priceOfPurhcasedGoodsPerUnit,
         numberOfGoodsPurchased,
         rateOfGST,
         profitPerUnit,
         numberOfGoodsSold
     } = props.data
 
-    const cp = goodsPurchasePricePerUnit*numberOfGoodsPurchased
-    const sp = (goodsPurchasePricePerUnit+profitPerUnit)*numberOfGoodsSold
+    const cp = priceOfPurhcasedGoodsPerUnit*numberOfGoodsPurchased
+    const sp = (priceOfPurhcasedGoodsPerUnit+profitPerUnit)*numberOfGoodsSold
 
     const inputCGST = Math.ceil(cp*(rateOfGST/200))
     const inputSGST = inputCGST
