@@ -1,7 +1,6 @@
 .result {
     grid-area: 2 / 2 / 3 / 3;
     margin: 20px;
-    margin-left: 100px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -10,6 +9,10 @@
     background-color: var(--blue);
     padding: 20px;
     border-radius: 10px;
+    width: 325px;
+    height: 410px;
+    display: grid;
+    place-items: center;
 }
 .result-page {
     display: flex;
@@ -43,6 +46,5 @@
 @media (max-width: 800px) {
     .result {
         justify-content: center;
-        margin-left: 20px;
     }
 }
