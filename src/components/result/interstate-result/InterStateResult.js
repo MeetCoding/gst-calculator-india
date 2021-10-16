@@ -2,15 +2,16 @@ import React from 'react'
 
 function InterStateResult(props) {
     const {
-        goodsPurchasePricePerUnit,
+        numberOfGoodsPurchased,
         priceOfPurhcasedGoodsPerUnit,
         rateOfGST,
         profitPerUnit,
         numberOfGoodsSold
     } = props.data
+    console.log(props.data)
 
-    const cp = goodsPurchasePricePerUnit*priceOfPurhcasedGoodsPerUnit
-    const sp = (goodsPurchasePricePerUnit+profitPerUnit)*numberOfGoodsSold
+    const cp = numberOfGoodsPurchased*priceOfPurhcasedGoodsPerUnit
+    const sp = (priceOfPurhcasedGoodsPerUnit+profitPerUnit)*numberOfGoodsSold
 
     const inputIGST = Math.ceil(cp*(rateOfGST/100))
 
